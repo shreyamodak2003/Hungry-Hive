@@ -23,7 +23,7 @@ const Footer = () => {
                     <li>About Us</li>
                     <li>Deliver</li>
                     <li>Privacy Policy</li>
-                    <Link target='_blank' to="http://localhost:5173"><li>Admin</li></Link>
+                    <Link target='_blank' to="https://hungry-hive-admin.vercel.app"><li>Admin</li></Link>
                 </ul>
             </div>
             <div className="footer-content-right">
