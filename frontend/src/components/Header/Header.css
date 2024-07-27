@@ -1,8 +1,8 @@
 .header{
     height: 34vw;
     margin: 30px auto;
-    background: url("./header_img.png") no-repeat;
-    background-size: contain;
+    background: url("https://images.template.net/107970/food-background-zudna.png") no-repeat;
+    background-size: cover;
     position: relative;
 }
 
