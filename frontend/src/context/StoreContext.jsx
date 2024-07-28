@@ -5,11 +5,12 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props)=>{
 
-    const [cartItems, setCartItems] = useState({});
     //const url = "http://localhost:4000"
     const url = "https://hungry-hive-backend-73ks.onrender.com"
+    const [cartItems, setCartItems] = useState({});
     const [token,setToken] = useState("")
     const [food_list,setFoodList] =useState([])
+    const [loading, setLoading] = useState(false);
 
     const addToCart = async (itemId) => {
         if(!cartItems[itemId]){
@@ -76,6 +77,7 @@ const StoreContextProvider = (props)=>{
         loadCartData,
         fetchFoodList,
         setFoodList,
+        loading
     }
     return (
         <StoreContext.Provider value={contextValue}>
